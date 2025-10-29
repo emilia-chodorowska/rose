@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dōTERRA - Produkty Rose</title>
+    <!-- Import Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Import czcionki Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Używamy 'Inter' jako domyślnej czcionki, podobnie jak w czystych projektach */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        /* Definiujemy niestandardowe kolory, aby pasowały do PDF */
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'rose-light': '#FFF5F5', // Jasny, subtelny róż tła
+                        'rose-dark': '#C15C77',  // Ciemniejszy róż dla akcentów i tekstu
+                        'gold-accent': '#D4AF37' // Złoty akcent (z zakrętki)
+                    }
+                }
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Główny kontener strony -->
+    <div class="container mx-auto max-w-5xl my-12 bg-white shadow-xl rounded-lg overflow-hidden">
+        
+        <!-- Nagłówek -->
+        <header class="p-8 text-center border-b-4 border-rose-light">
+            <h1 class="text-5xl font-light text-rose-dark">dōTERRA</h1>
+            <p class="text-xl text-gray-500 mt-2">CPTG Certified Pure Tested Grade®</p>
+        </header>
+
+        <!-- Sekcja Produktu 1: Rose Hydrosol Mist -->
+        <section class="p-8 md:p-12">
+            <div class="flex flex-col md:flex-row gap-12 items-center">
+                
+                <!-- Obrazek produktu (Placeholder) -->
+                <div class="md:w-1/2 w-full">
+                    <img src="https://raw.githubusercontent.com/TWOJA_NAZWA_UZYTKOWNIKA/rose/main/hydrosol.png"
+                         alt="Mgiełka z hydrolatem z róży"
+                         class="rounded-lg shadow-md w-full h-auto object-cover"
+                         onerror="this.src='https://placehold.co/500x700/FADADD/C15C77?text=Brak+obrazu'">
+                </div>
+                
+                <!-- Informacje o produkcie -->
+                <div class="md:w-1/2 w-full">
+                    <h2 class="text-4xl font-light text-rose-dark">Rose Hydrosol Mist</h2>
+                    <p class="text-xl text-gray-600 mb-6">Mgiełka z hydrolatem z róży | 100 mL</p>
+
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Podstawowe korzyści</h3>
+                    <ul class="list-disc list-inside space-y-2 text-gray-700 mb-6">
+                        <li>Łagodzi i uspokaja skórę dzięki geraniolowi, co potwierdzają badania przedkliniczne</li>
+                        <li>Oferuje lekkie nawilżenie i orzeźwiający zastrzyk wilgoci</li>
+                        <li>Ożywia zmęczone cery</li>
+                        <li>Wzbogaca naturalną rutynę o piękny zapach róż</li>
+                    </ul>
+
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Opis</h3>
+                    <p class="text-gray-700 leading-relaxed mb-6">
+                        Od wieków eksperci od piękna znają pewien sekret: hydrolaty mają kojące i odżywcze właściwości, które łagodzą i odświeżają zmęczoną skórę. Jak chłodny łyk wody dla każdego typu cery, mgiełka dōTERRA Rose Hydrosol natychmiast dodaje twarzy energii, otulając ją lekkim, różano-kwiatowym aromatem. Zgodnie z badaniami przedklinicznymi geraniol, składnik tego hydrolatu, sprawia, że jest on kojącym uzupełnieniem każdej rutyny pielęgnacyjnej. Pomaga nawilżać i ożywiać suchą, zmęczoną skórę oraz nadaje cerze zdrowy blask.
+                    </p>
+
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Użycie</h3>
+                    <ul class="list-disc list-inside space-y-2 text-gray-700">
+                        <li>Włącz do swojej porannej i wieczornej pielęgnacji skóry. Spryskuj twarz, ciało i włosy w ciągu dnia, aby zapewnić sobie odmładzający zastrzyk nawilżenia.</li>
+                        <li>Użyj do stworzenia subtelnego, różano-kwiatowego zapachu osobistego.</li>
+                        <li>Połącz z Moringa Rose Nourishing Oil dla dodatkowego efektu łagodzącego.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Separator -->
+        <hr class="border-t-2 border-gray-100 my-8">
+
+        <!-- Sekcja Produktu 2: Moringa Rose Nourishing Oil -->
+        <section class="p-8 md:p-12">
+            <div class="flex flex-col md:flex-row-reverse gap-12 items-center">
+                
+                <!-- Obrazek produktu (Placeholder) -->
+                <div class="md:w-1/2 w-full">
+                    <img src="https://raw.githubusercontent.com/TWOJA_NAZWA_UZYTKOWNIKA/rose/main/moringa.png"
+                         alt="Moringa Rose Nourishing Oil"
+                         class="rounded-lg shadow-md w-full h-auto object-cover"
+                         onerror="this.src='https://placehold.co/500x700/FFFFFF/C15C77?text=Brak+obrazu'">
+                </div>
+                
+                <!-- Informacje o produkcie -->
+                <div class="md:w-1/2 w-full">
+                    <h2 class="text-4xl font-light text-rose-dark">Moringa Rose</h2>
+                    <p class="text-xl text-gray-600 mb-6">Mieszanka odżywiająca | 30 mL</p>
+
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Podstawowe korzyści</h3>
+                    <ul class="list-disc list-inside space-y-2 text-gray-700 mb-6">
+                        <li>Stworzony na bazie olejku moringa, stosowanego tradycyjnie w produkcji kosmetyków i perfum już przez starożytnych Greków, Rzymian i Egipcjan.</li>
+                        <li>Opracowany z dodatkiem olejku eterycznego z róży dōTERRA tworzącego bogaty, nawilżający i luksusowy olejek do twarzy.</li>
+                        <li>Działa kojąco na skórę, pomagając zapewnić jej aksamitny i gładki wygląd.</li>
+                        <li>Nadaje lekki, aksamitno-słodki, kwiatowy aromat.</li>
+                    </ul>
+
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Opis</h3>
+                    <p class="text-gray-700 leading-relaxed mb-6">
+                        Odżywczy olejek Moringa Rose oferuje intensywne nawilżenie i odżywienie, delikatnie wchłaniając się w skórę, by stworzyć miękką, rozświetloną i promienną cerę. Ta potężna formuła nawilżająca jest odpowiednia dla wszystkich typów skóry i charakteryzuje się kojącym aromatem róż.
+                    </p>
+
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Kluczowe Składniki</h3>
+                    <ul class="list-none space-y-2 text-gray-700 mb-6">
+                        <li><strong>Olej Moringa:</strong> Pozyskiwany z nasion drzewa moringa, bogaty w kwasy oleinowe i inne kwasy tłuszczowe.</li>
+                        <li><strong>CPTG® Olejek Eteryczny z Róży:</strong> Kojący i wyrównujący, pomaga zmniejszyć widoczność niedoskonałości skóry i promuje zdrowy, jednolity koloryt skóry.</li>
+                    </ul>
+
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Użycie</h3>
+                    <ul class="list-disc list-inside space-y-2 text-gray-700">
+                        <li>Wzbogać swój poranny i wieczorny rytuał pielęgnacyjny, rozprowadzając olejek na twarzy, by odżywić skórę.</li>
+                        <li>Nałóż na skórę, by zapewnić jej dodatkowe nawilżenie, lub dodaj do swojego ulubionego balsamu do ciała dōTERRA.</li>
+                        <li>Zastosuj olejek z drzewa moringa i róży jako ostatni etap wieczornej pielęgnacji skóry twarzy, by zapewnić najefektywniejsze wchłanianie.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stopka -->
+        <footer class="text-center p-8 bg-gray-50 text-gray-500 border-t">
+            © 2024 dōTERRA. Wszelkie prawa zastrzeżone. (Strona demonstracyjna)
+        </footer>
+
+    </div>
+
+</body>
+</html>
